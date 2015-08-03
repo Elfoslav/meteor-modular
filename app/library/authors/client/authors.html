@@ -1,0 +1,25 @@
+<template name="authors">
+  <h1>Authors</h1>
+  <h2>Add author:</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      {{> quickForm collection="AuthorsCollection" id="author-form" type="insert"}}
+    </div>
+  </div>
+  <hr>
+  {{#if authors.count}}
+    <p><small>({{authors.count}}) authors</small></p>
+  {{/if}}
+  {{#each authors}}
+    <p>
+      <a href="{{pathFor 'authorDetail' _id=_id}}" title="{{info}}">{{name}}</a>
+      <a href="#" class="red" data-action="remove-author" title="remove author">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+    </p>
+  {{else}}
+    <p>
+      No authors.
+    </p>
+  {{/each}}
+</template>

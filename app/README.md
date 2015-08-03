@@ -1,0 +1,1 @@
+This is an app folder that contains app functionality - modules.

@@ -1,0 +1,12 @@
+<template name="authorDetail">
+  <h1>Author {{author.name}}</h1>
+  <pre class="unstyled-pre">{{author.info}}</pre>
+  <p><a href="{{pathFor 'authors'}}">&larr; Back to list</a></p>
+  <hr>
+  <h2>Edit</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      {{> quickForm collection="AuthorsCollection" doc=author id="author-form" type="update"}}
+    </div>
+  </div>
+</template>

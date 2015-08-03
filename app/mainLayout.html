@@ -1,0 +1,25 @@
+<template name="mainLayout">
+  <head>
+    <title>meteor-modular</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="{{pathFor 'authors'}}">Authors</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      {{> yield}}
+    </div>
+  </body>
+</template>
+
+<template name="home">
+  <h1>Welcome to Meteor modular</h1>
+  <p>This is an example of modular application structure in Meteor.</p>
+  <p>Modular structure is useful for very big apps.</p>
+</template>

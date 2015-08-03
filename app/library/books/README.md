@@ -1,0 +1,1 @@
+This folder would have similar structure like authors folder ;-)
