@@ -1,0 +1,1 @@
+Common lib folder for sharing code (server + client) between modules.

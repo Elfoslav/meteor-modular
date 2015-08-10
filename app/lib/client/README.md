@@ -1,0 +1,1 @@
+Common client folder for shared code between modules.
